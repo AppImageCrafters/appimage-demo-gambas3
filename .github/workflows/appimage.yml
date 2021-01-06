@@ -10,6 +10,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          sudo add-apt-repository ppa:gambas-team/gambas3
+          sudo apt-get install gambas3
+          gbc3 ./project
+        
       - name: Build AppImage
         uses: AppImageCrafters/build-appimage-action@master
         env:
