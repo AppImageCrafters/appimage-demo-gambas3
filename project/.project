@@ -1,0 +1,20 @@
+# Gambas Project File 3.0
+Startup=FMain
+Icon=mapview.png
+Version=0.0.3
+Component=gb.image
+Component=gb.gui
+Component=gb.form
+TabSize=2
+Language=en_US
+Maintainer=alexis
+Address=alexis@X1
+License=General Public License
+PackageName=appimage-demo-gambas-0.0.3
+Packager=1
+Systems=debian
+Menus=debian:"Applications/Shells"
+Groups=debian:"admin"
+Menus=ubuntu:"Applications/Network/Communication"
+Categories=ubuntu:"Network"
+Groups=ubuntu:"education"

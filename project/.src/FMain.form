@@ -1,0 +1,14 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,60,36)
+  { Button1 Button
+    MoveScaled(7,18,47,13)
+    Text = ("Close Me !!")
+  }
+  { label Label
+    MoveScaled(7,5,47,8)
+    Font = Font["Bold,+12"]
+    Text = ("Hello World!")
+  }
+}
