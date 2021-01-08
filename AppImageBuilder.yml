@@ -4,7 +4,7 @@ script:
   - rm -rf AppDir || true
   - mkdir -p AppDir/usr/bin AppDir/usr/share/icons/hicolor/32x32/apps/
   - cp project/mapview.png AppDir/usr/share/icons/hicolor/32x32/apps/
-  - cp -r project ./AppDir
+  - cp project/project.gambas AppDir/usr/bin/appimage-demo-gambas3.gambas
 AppDir:
   path: ./AppDir
   app_info:
@@ -12,8 +12,8 @@ AppDir:
     name: appimage-demo-gambas3
     icon: mapview
     version: latest
-    exec: usr/bin/gbx3
-    exec_args: $APPDIR/project -- $@
+    exec: usr/bin/gbr3
+    exec_args: $APPDIR/usr/bin/appimage-demo-gambas3.gambas -- $@
   apt:
     arch: amd64
     allow_unauthenticated: true
@@ -53,6 +53,8 @@ AppDir:
     - libxinerama1
     - libxrender1
     - libxt6
+    - libfontconfig1
+    - libfreetype6
     exclude:
     - adwaita-icon-theme
     - adwaita-icon-theme-full

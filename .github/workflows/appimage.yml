@@ -15,7 +15,8 @@ jobs:
           sudo add-apt-repository ppa:gambas-team/gambas3
           sudo apt-get install gambas3
           gbc3 ./project
-        
+          gba3 ./project
+
       - name: Build AppImage
         uses: AppImageCrafters/build-appimage-action@master
         env:
